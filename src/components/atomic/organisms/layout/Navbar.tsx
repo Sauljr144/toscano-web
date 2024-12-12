@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ToscanoLogo from '../../../../../public/assets/images/Logo.png';
 import Link from 'next/link';
 import { FaFacebookF } from 'react-icons/fa';
-import { FaBoltLightning, FaInstagram } from 'react-icons/fa6';
+import { FaInstagram } from 'react-icons/fa6';
 import { IoMenu, IoCloseOutline } from 'react-icons/io5';
 import { useState } from 'react';
 import links from '@/utils/links';
@@ -12,7 +12,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className=' bg-white-tan rounded-b-2xl'>
+    <nav className=' bg-white-tan rounded-b-2xl '>
       <div className='container flex p-4 items-center justify-between mx-auto'>
         <div>
           <Link href={'/'}>
@@ -51,8 +51,8 @@ const Navbar = () => {
           <div
             className={
               openMenu
-                ? 'absolute top-[75.6px] right-0 left-0 bottom-0 flex flex-col  w-[50%] h-screen bg-orange rounded-r-xl  ease-in duration-300 '
-                : 'absolute top-[75.6px] right-0 left-[-100%] flex flex-col w-[50%] h-screen bg-orange rounded-r-xl ease-in duration-300'
+                ? 'fixed  right-0 left-0 bottom-0 flex flex-col  w-[60%] h-screen bg-orange rounded-r-xl  ease-in duration-300 '
+                : 'fixed  right-0 left-[-100%] bottom-0 flex flex-col w-[60%] h-screen bg-orange rounded-r-xl ease-in duration-300'
             }
           >
             <div className='mt-5 me-4 flex justify-end'>
@@ -67,6 +67,7 @@ const Navbar = () => {
                     key={link.name}
                     href={link.href}
                     className='mb-4 text-xl font-poppins hover:font-medium hover:underline hover:underline-offset-8'
+                    onChange={()=>setOpenMenu(false)}
                   >
                     {link.name}
                   </Link>

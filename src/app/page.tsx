@@ -1,14 +1,12 @@
-import Navbar from "@/components/atomic/organisms/layout/Navbar";
-
-
+import About from '@/components/atomic/organisms/about/About';
+import Hero from '@/components/atomic/organisms/hero/Hero';
 
 export default function Home() {
 
-
   return (
-   <>
-   <Navbar/>
-   
-   </>
+    <>
+      <Hero/>
+      <About/>
+    </>
   );
 }
