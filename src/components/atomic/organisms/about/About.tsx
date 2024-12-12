@@ -3,7 +3,7 @@ import AboutBG from '../../../../../public/assets/images/about.jpg';
 
 const About = () => {
   return (
-    <div className='container mx-auto p-3 bg-green mt-8 rounded-xl'>
+    <div id='about-us' className='container mx-auto p-3 bg-green mt-8 rounded-xl'>
       <div className='relative lg:h-[900px] h-[800px] w-full'>
         <Image
           src={AboutBG}
@@ -12,19 +12,19 @@ const About = () => {
           style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
           className='rounded-2xl'
         />
-        <div className='absolute top-0 left-0 w-full h-full bg-black/30 rounded-2xl flex flex-col  justify-end text-white font-poppins '>
+        <div className='absolute top-0 left-0 w-full h-full bg-black/30 rounded-2xl flex flex-col justify-end text-white font-poppins '>
           <div className='lg:ms-12 flex flex-col lg:items-start items-center'>
             <span
-              id='about-us'
-              className=' text-white bg-white/60 border-2 rounded-2xl py-2 px-8 font-medium lg:text-base text-xs backdrop-blur-sm'
+              
+              className=' text-white bg-white/60 border-2 rounded-2xl py-2 px-8 font-poppins font-medium lg:text-base text-xs backdrop-blur-sm'
             >
               About Us
             </span>
 
-            <h1 className='lg:text-4xl text-2xl font-medium lg:mt-10 mt-7'>
+            <h2 className='lg:text-4xl text-2xl font-medium lg:mt-10 mt-7'>
               Growing Since 1991
-            </h1>
-            <div className='lg:font-medium mt-5 mb-12 lg:pr-20 lg:px-0 px-10 lg:text-base text-xs leading-5 lg:text-left text-center'>
+            </h2>
+            <div className='lg:font-medium mt-5 mb-12 lg:pr-20 lg:px-0 px-10 lg:text-base text-xs font-poppins leading-5 lg:text-left text-center'>
               <p>
                 We are a family-owned and operated farm located in Lodi,
                 California, in the heart of the San Joaquin Valley, one of the

@@ -12,8 +12,8 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className=' bg-white-tan rounded-b-2xl '>
-      <div className='container flex p-4 items-center justify-between mx-auto'>
+    <nav className=' bg-white-tan rounded-b-2xl z-10  sticky top-0'>
+      <div className='container flex p-4 items-center justify-between mx-auto '>
         <div>
           <Link href={'/'}>
             <Image
@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className='lg:hidden z-10'>
+        <div className='lg:hidden z-10 '>
           <button onClick={() => setOpenMenu(true)}>
             <IoMenu className='text-3xl' />
           </button>
