@@ -18,8 +18,8 @@ interface StoresData {
 
 const Products = () => {
   return (
-    <div className='container mx-auto p-3 mt-10 rounded-xl bg-orange flex flex-col justify-center'>
-      <div className='flex justify-center mt-10 mb-10'>
+    <div className='container mx-auto p-3 mt-10  rounded-xl bg-orange flex flex-col justify-center'>
+      <div className='flex justify-center mt-24 mb-10'>
         <span
           id='products'
           className='bg-orange-light rounded-2xl py-2 px-8 font-poppins font-medium lg:text-base text-xs backdrop-blur-sm'
@@ -49,9 +49,13 @@ const Products = () => {
           <StoresBtn name={store.name} url={store.url} />
         ))}
       </div>
-      <h3 className='lg:text-2xl text-lg font-poppins font-semibold text-center mb-8 mt-10'>
+      <h3 className='lg:text-2xl text-lg font-poppins font-semibold text-center mb-3 mt-10'>
         Hot Great Hot Sauces Are Made!
       </h3>
+
+      <div className='flex justify-center lg:px-20 mb-12'>
+        <iframe className='lg:w-full w-[700px] lg:h-[720px] h-[300px] rounded-2xl ' src="https://www.youtube.com/embed/3zn_IYDf1mk?si=YdPJxtH2emqq-HgE" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+      </div>
     </div>
   );
 };
