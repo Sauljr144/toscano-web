@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image';
-import HomeBG from '../../../../public/assets/images/carrot.jpg';
 import { GoArrowUpRight } from 'react-icons/go';
 import Link from 'next/link';
 
