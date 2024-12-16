@@ -37,7 +37,7 @@ const Products = () => {
       </div>
       <div className='grid lg:grid-cols-4 grid-cols-2 lg:gap-7 md:gap-5 gap-3 mb-10 lg:mx-12 md:mx-10'>
         {items.map((item: ItemsData) => (
-          <Card name={item.name} image={item.image} url={item.url} alt={item.alt}/>
+          <Card key={item.name} name={item.name} image={item.image} url={item.url} alt={item.alt}/>
         ))}
       </div>
 
@@ -46,7 +46,7 @@ const Products = () => {
       </h3>
       <div className='text-center mb-8'>
         {stores.map((store: StoresData) => (
-          <StoresBtn name={store.name} url={store.url} />
+          <StoresBtn key={store.name} name={store.name} url={store.url} />
         ))}
       </div>
       <h3 className='lg:text-2xl text-lg font-poppins font-semibold text-center mb-3 mt-10'>
@@ -54,7 +54,7 @@ const Products = () => {
       </h3>
 
       <div className='flex justify-center lg:px-20 mb-12'>
-        <iframe className='lg:w-full w-[700px] lg:h-[720px] h-[300px] rounded-2xl ' src="https://www.youtube.com/embed/3zn_IYDf1mk?si=YdPJxtH2emqq-HgE" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <iframe  className='lg:w-full w-[700px] lg:h-[720px] h-[300px] rounded-2xl ' src="https://www.youtube.com/embed/pc069d3uS6A?si=OtVTXpEtbK_s3Zyq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; compute-pressure " ></iframe>
       </div>
     </div>
   );

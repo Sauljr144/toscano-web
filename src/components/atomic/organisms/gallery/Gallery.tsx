@@ -24,9 +24,9 @@ const Gallery = () => {
         <p>Explore the vibrant heart of our farm through our gallery!</p>
       </div>
       <div className='grid grid-cols-2 lg:gap-6 gap-2 lg:px-48 px-6 mb-10'>
-        {photos1.map((photo)=><Image src={photo.photo} alt={photo.alt} className='rounded-2xl' style={{ objectFit: 'cover'}} loading='lazy' />)}
+        {photos1.map((photo, index)=><Image key={index} src={photo.photo} alt={photo.alt} className='rounded-2xl' style={{ objectFit: 'cover'}} loading='lazy' />)}
         <Image className='rounded-2xl col-span-2 row-span-2' src={G3} alt={'farming'} loading='lazy'/>
-        {photos2.map((photo)=><Image src={photo.photo} alt={photo.alt} className='rounded-2xl'  style={{ objectFit: 'cover'}} loading='lazy' />)}
+        {photos2.map((photo, index)=><Image key={index} src={photo.photo} alt={photo.alt} className='rounded-2xl'  style={{ objectFit: 'cover'}} loading='lazy' />)}
         <Image className='rounded-2xl col-span-2 row-span-2' src={G6} alt={'tractor on farmland'} loading='lazy'/>
       </div>
     </div>

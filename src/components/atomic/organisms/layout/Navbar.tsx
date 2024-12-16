@@ -20,6 +20,7 @@ const Navbar = () => {
               src={ToscanoLogo}
               alt={'Tocano Family Farms Logo'}
               className='lg:w-20 w-14'
+              priority
             />
           </Link>
         </div>

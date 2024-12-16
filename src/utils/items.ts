@@ -8,13 +8,13 @@ const items = [
         'name':'Produce',
         'image':Carrot,
         'alt':'Carrot',
-        'url':''
+        'url':'#contact-us'
     },
     {
         'name': 'Melons',
         'image': Melon,
         'alt':'Melons',
-        'url':''
+        'url':'#contact-us'
     },
     {
         'name': 'Hot Sauces',
