@@ -27,7 +27,7 @@ const FormInput: React.FC<FromInputProps> = ({
         id={id}
         name={name}
         placeholder={placeholder}
-        className={`lg:py-3 py-2 px-3 rounded-3xl border border-black bg-white-tan lg:placeholder:text-sm placeholder:text-xs ${height}`}
+        className={`lg:py-3 py-2 px-3 rounded-3xl border border-black  focus:outline-orange-dark bg-white-tan text-sm lg:placeholder:text-sm placeholder:text-xs ${height}`}
       />
       <ErrorMessage
         name={errorText}

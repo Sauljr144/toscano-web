@@ -44,23 +44,35 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className='lg:hidden z-10 '>
-          <button onClick={() => setOpenMenu(true)}>
+        <div className='lg:hidden z-10'>
+          {/* Menu Button */}
+          <button onClick={() => setOpenMenu(true)} className='relative z-20'>
             <IoMenu className='text-3xl' />
           </button>
 
+          {/* Overlay */}
+          {openMenu && (
+            <div
+              onClick={() => setOpenMenu(false)} // Close menu when clicking on the overlay
+              className='fixed inset-0  z-10'
+            ></div>
+          )}
+
+          {/* Mobile Navigation */}
           <div
-            className={
-              openMenu
-                ? 'fixed  right-0 left-0 bottom-0 flex flex-col  w-[60%] h-screen bg-orange rounded-r-xl  ease-in duration-300 '
-                : 'fixed  right-0 left-[-100%] bottom-0 flex flex-col w-[60%] h-screen bg-orange rounded-r-xl ease-in duration-300'
-            }
+            onClick={(e) => e.stopPropagation()} 
+            className={`fixed right-0 bottom-0 top-0 flex flex-col w-[60%] h-screen bg-orange rounded-l-xl z-20 ease-in duration-300 ${
+              openMenu ? 'translate-x-0' : 'translate-x-full'
+            }`}
           >
+            {/* Close Button */}
             <div className='mt-5 me-4 flex justify-end'>
               <button onClick={() => setOpenMenu(false)}>
                 <IoCloseOutline className='text-3xl' />
               </button>
             </div>
+
+            {/* Navigation Links */}
             <div className='flex flex-col h-3/4 mt-14'>
               <div className='flex flex-col ms-5'>
                 {links.map((link) => (
@@ -68,16 +80,17 @@ const Navbar = () => {
                     key={link.name}
                     href={link.href}
                     className='mb-4 text-xl font-poppins hover:font-medium hover:underline hover:underline-offset-8'
-                    onChange={()=>setOpenMenu(false)}
+                    onClick={() => setOpenMenu(false)} // Close menu on link click
                   >
                     {link.name}
                   </Link>
                 ))}
               </div>
 
-              <div className='flex items-center  ms-5'>
+              {/* Social Links */}
+              <div className='flex items-center ms-5'>
                 <Link href={'https://www.facebook.com/ToscanoFamilyFarm'}>
-                  <FaFacebookF className='text-xl mr-2 ' />
+                  <FaFacebookF className='text-xl mr-2' />
                 </Link>
                 <Link href={'https://www.instagram.com/toscanofamilyfarm/'}>
                   <FaInstagram className='text-2xl' />

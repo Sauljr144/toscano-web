@@ -42,9 +42,9 @@ const ContactForm = () => {
     emailjs
       .send(
         'service_2aqbe4i', // Replace with your EmailJS Service ID
-        'template_3wypya7', // Replace with your EmailJS Template ID
+        'template_uylemk8', // Replace with your EmailJS Template ID
         templateParams,
-        'LbHtosXEWVT-SAfTT' // Replace with your EmailJS Public Key
+        'Ve_HyowSqj8_Wb_6f' // Replace with your EmailJS Public Key
       )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
@@ -93,14 +93,14 @@ const ContactForm = () => {
             <FormInput id='firstName' name='firstName' label='First Name' placeholder='First Name' errorText='firstName' />
             <FormInput id='lastName' name='lastName' label='Last Name' placeholder='Last Name' errorText='lastName' />
           </div>
-          <FormInput id='email' name='email' label='Email' placeholder='Email' errorText='email' />
-          <FormInput id='subject' name='subject' label='Subject' placeholder='Subject' errorText='subject' />
-          <FormInput id='message' name='message' label='Message' placeholder='Message' errorText='message' as='textarea' height='h-48' />
+            <FormInput id='email' name='email' label='Email' placeholder='Email' errorText='email' />
+            <FormInput id='subject' name='subject' label='Subject' placeholder='Subject' errorText='subject' />
+            <FormInput id='message' name='message' label='Message' placeholder='Message' errorText='message' as='textarea' height='h-48' />
           <div className='flex justify-center mt-5'>
             <div className='flex justify-center mt-5'>
               <button
                 type='submit'
-                className='py-3 px-12 rounded-3xl border border-black hover:bg-black hover:text-white lg:text-base text-sm'
+                className='py-3 px-12 rounded-3xl border border-black hover:border-orange-dark hover:bg-orange-dark hover:text-white lg:text-base text-sm'
                 disabled={isSubmitting}
               >
                 {isSubmitting ?<div className='flex items-center mr-2'> <ImSpinner6 className='animate-spin mr-1'/> <span>Sending...</span> </div>  : 'Submit'}
