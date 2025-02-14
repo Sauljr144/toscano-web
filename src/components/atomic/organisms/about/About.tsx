@@ -3,8 +3,8 @@ import AboutBG from '../../../../../public/assets/images/about.jpg';
 
 const About = () => {
   return (
-    <div id='about-us' className='container mx-auto p-3 bg-green mt-8 rounded-xl'>
-      <div className='relative lg:h-[900px] h-[800px] w-full'>
+    <div id='about-us' className='container mx-auto p-3 bg-green mt-8 rounded-xl scroll-mt-[100px]'>
+      <div className='relative lg:h-[900px] h-[800px] w-full '>
         <Image
           src={AboutBG}
           alt='Farmland'

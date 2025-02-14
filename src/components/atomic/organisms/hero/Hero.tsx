@@ -6,7 +6,7 @@ const Hero = () =>{
     const shopUrl = 'https://toscanohotsauce.square.site/'
 
     return(
-        <div id='home' className='container mx-auto px-3 '>
+        <div id='home' className='container mx-auto px-3 scroll-mt-[100px]'>
         <div className='relative lg:h-[800px] h-[600px] w-full '>
           <Image
             src={HomeBG}

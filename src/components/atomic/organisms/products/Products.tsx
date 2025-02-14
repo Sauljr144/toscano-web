@@ -18,10 +18,9 @@ interface StoresData {
 
 const Products = () => {
   return (
-    <div className='container mx-auto p-3 mt-10  rounded-xl bg-orange flex flex-col justify-center'>
+    <div id='products' className='container mx-auto p-3 mt-10  rounded-xl bg-orange flex flex-col justify-center scroll-mt-[100px]'>
       <div className='flex justify-center mt-24 mb-10'>
         <span
-          id='products'
           className='bg-orange-light rounded-2xl py-2 px-8 font-poppins font-medium lg:text-base text-xs backdrop-blur-sm'
         >
           Products

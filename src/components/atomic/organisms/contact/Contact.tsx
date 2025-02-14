@@ -6,10 +6,10 @@ const Contact = () =>{
 
 
     return(
-        <div className='container mx-auto p-3 mt-10 flex flex-col justify-center'>
+        <div id='contact-us' className='container mx-auto p-3 mt-10 flex flex-col justify-center scroll-mt-[100px]'>
         <div className='flex justify-center mt-24 mb-10'>
           <span
-            id='contact-us'
+            
             className='bg-yellow rounded-2xl py-2 px-8 font-poppins font-medium lg:text-base text-xs backdrop-blur-sm'
           >
             Contact Us

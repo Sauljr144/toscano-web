@@ -79,6 +79,18 @@ const stores = [
         "name":"Ernie's General Store Inc",
         "url":"https://www.facebook.com/profile.php?id=100063589811584"
     },
+    {
+        "name":"Green's Nutrition",
+        "url":"https://www.greensnutrition.com"
+    },
+    {
+        "name":"Rinaldi's Market",
+        "url":"https://m.facebook.com/profile.php?id=118020684877300"
+    },
+    {
+        "name":"Meals - Lodi Unified School District",
+        "url":"https://www.lodiusd.net/families/meals"
+    },
 ]
 
 export default stores

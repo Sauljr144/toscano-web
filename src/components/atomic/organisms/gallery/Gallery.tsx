@@ -11,10 +11,9 @@ const Gallery = () => {
   const photos2 = [{photo: G4, alt: 'farm plants'},{photo: G5, alt: 'farmland and truck'}];
 
   return (
-    <div className='container mx-auto p-3 mt-10  rounded-xl bg-blue-light flex flex-col justify-center'>
+    <div id='gallery' className='container mx-auto p-3 mt-10  rounded-xl bg-blue-light flex flex-col justify-center scroll-mt-[100px]'>
       <div className='flex justify-center mt-24 mb-10'>
         <span
-          id='gallery'
           className='bg-white rounded-2xl py-2 px-8 font-poppins font-medium lg:text-base text-xs backdrop-blur-sm'
         >
           Gallery
