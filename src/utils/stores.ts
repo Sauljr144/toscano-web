@@ -91,6 +91,10 @@ const stores = [
         "name":"Meals - Lodi Unified School District",
         "url":"https://www.lodiusd.net/families/meals"
     },
+    {
+        "name":"Genova Bakery",
+        "url":"https://www.genovabakery.com/"
+    },
 ]
 
 export default stores
