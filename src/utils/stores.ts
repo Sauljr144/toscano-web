@@ -95,6 +95,18 @@ const stores = [
         "name":"Genova Bakery",
         "url":"https://www.genovabakery.com/"
     },
+    {
+        "name":"Calivirgin - Coldani Olive Ranch",
+        "url":"https://www.calivirgin.com"
+    },
+    {
+        "name":"Lira's Supermarkets",
+        "url":"https://www.lirassupermarket.com"
+    },
+    {
+        "name":"The McBoodery",
+        "url":"https://www.lirassupermarket.com"
+    },
 ]
 
 export default stores
