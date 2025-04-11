@@ -105,7 +105,31 @@ const stores = [
     },
     {
         "name":"The McBoodery",
-        "url":"https://www.lirassupermarket.com"
+        "url":"https://themcboodery.com"
+    },
+    {
+        "name":"Fiori's Butcher Shoppe & Deli",
+        "url":"https://fiorisdeli.com"
+    },
+    {
+        "name":"Pedrick Produce",
+        "url":"https://pedrickproduce.com"
+    },
+    {
+        "name":"A1 AG Farmers Market",
+        "url":"https://m.facebook.com/a1agfarmersmarket/"
+    },
+    {
+        "name":"Olive Oil Pantry Restaurant",
+        "url":"https://oliveoilpantry.com"
+    },
+    {
+        "name":"Sheri's Sonshine Nutrition Center",
+        "url":"https://www.sheris.com"
+    },
+    {
+        "name":"Lakewood Meats & Sausage",
+        "url":"https://lakewoodmeats.com"
     },
 ]
 
